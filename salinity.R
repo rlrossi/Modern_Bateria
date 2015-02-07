@@ -1,3 +1,5 @@
+# Rachel Rossi 1/6/15
+
 salinity = function(T_0, T_in, q, v, dt, steps){
   time=0
   T_store = c(0)
@@ -8,8 +10,7 @@ salinity = function(T_0, T_in, q, v, dt, steps){
     time = time + dt
     Time_store[i]=  time
   }
-return(list('time' = Time_store, 'concentration' =T_store))
-tf <- salinity(1,10,0.024,0.5,0.1,1000)
-plot(s$time, s$concentration)
+  return(list('time' = Time_store, 'concentration' =T_store))
+}
 
 
